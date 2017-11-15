@@ -7,7 +7,7 @@ import com.github.cleanArchitectureKotlin.domain.useCase.login.LoginUseCase
 import com.github.cleanArchitectureKotlin.domain.useCase.recoverPassword.RecoverPasswordUseCase
 import com.github.cleanArchitectureKotlin.domain.useCase.signIn.SignInUseCase
 import com.github.cleanArchitectureKotlin.domain.useCase.signOut.SignOutUseCase
-import com.github.cleanArchitectureKotlin.repository.UserRepository
+import com.github.cleanArchitectureKotlin.data.repository.UserRepository
 import dagger.Module
 import dagger.Provides
 

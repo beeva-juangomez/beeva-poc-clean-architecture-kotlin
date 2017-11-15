@@ -3,7 +3,7 @@ package com.github.cleanArchitectureKotlin.app.di.module
 import com.github.cleanArchitectureKotlin.data.source.cache.CacheDataSource
 import com.github.cleanArchitectureKotlin.data.source.disk.DiskDataSource
 import com.github.cleanArchitectureKotlin.data.source.network.NetworkDataSource
-import com.github.cleanArchitectureKotlin.repository.UserRepository
+import com.github.cleanArchitectureKotlin.data.repository.UserRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

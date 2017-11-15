@@ -1,4 +1,4 @@
-package com.github.cleanArchitectureKotlin.repository
+package com.github.cleanArchitectureKotlin.data.repository
 
 import com.github.cleanArchitectureKotlin.data.exception.UserNotFoundException
 import com.github.cleanArchitectureKotlin.data.source.cache.CacheDataSource
