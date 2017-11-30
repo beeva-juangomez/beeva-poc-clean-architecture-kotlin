@@ -8,7 +8,7 @@ import com.github.cleanArchitectureKotlin.domain.model.User
 import com.github.cleanArchitectureKotlin.domain.useCase.base.Response
 import com.github.cleanArchitectureKotlin.domain.useCase.login.LoginRequest
 import com.github.cleanArchitectureKotlin.domain.useCase.recoverPassword.RecoverPasswordRequest
-import com.github.cleanArchitectureKotlin.domain.useCase.signIn.SignInRequest
+import com.github.cleanArchitectureKotlin.domain.useCase.signUp.SignUpRequest
 
 
 class UserRepository(private val networkDataSource: NetworkDataSource,
@@ -28,8 +28,8 @@ class UserRepository(private val networkDataSource: NetworkDataSource,
         return response
     }
 
-    fun signIn(request: SignInRequest): Response<User> {
-        val response = networkDataSource.signIn(request)
+    fun signUp(request: SignUpRequest): Response<User> {
+        val response = networkDataSource.signUp(request)
         val user = response.data
         saveUser(user)
         return response

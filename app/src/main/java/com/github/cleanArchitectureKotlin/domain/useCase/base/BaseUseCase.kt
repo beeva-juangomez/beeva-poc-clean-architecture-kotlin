@@ -1,6 +1,6 @@
 package com.github.cleanArchitectureKotlin.domain.useCase.base
 
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.MainThread
+import com.github.cleanArchitectureKotlin.app.ui.base.mainThread.MainThread
 import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
 
 

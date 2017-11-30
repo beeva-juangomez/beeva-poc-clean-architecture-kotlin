@@ -1,11 +1,11 @@
 package com.github.cleanArchitectureKotlin.domain.useCase.getCurrentUser
 
+import com.github.cleanArchitectureKotlin.app.ui.base.mainThread.MainThread
 import com.github.cleanArchitectureKotlin.data.exception.UserNotFoundException
+import com.github.cleanArchitectureKotlin.data.repository.UserRepository
 import com.github.cleanArchitectureKotlin.domain.model.User
 import com.github.cleanArchitectureKotlin.domain.useCase.base.BaseUseCase
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.MainThread
 import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
-import com.github.cleanArchitectureKotlin.data.repository.UserRepository
 
 
 class GetCurrentUserUseCase(private val userRepository: UserRepository,

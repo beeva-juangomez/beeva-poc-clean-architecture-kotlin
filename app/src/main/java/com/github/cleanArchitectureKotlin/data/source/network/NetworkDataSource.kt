@@ -7,12 +7,12 @@ import com.github.cleanArchitectureKotlin.data.source.network.manager.NetworkCli
 import com.github.cleanArchitectureKotlin.data.source.network.model.NetworkError
 import com.github.cleanArchitectureKotlin.data.source.network.request.login.NetworkLoginRequest
 import com.github.cleanArchitectureKotlin.data.source.network.request.recoverPassword.NetworkRecoverPasswordRequest
-import com.github.cleanArchitectureKotlin.data.source.network.request.signIn.NetworkSignInRequest
+import com.github.cleanArchitectureKotlin.data.source.network.request.signUp.NetworkSignUpRequest
 import com.github.cleanArchitectureKotlin.domain.model.User
 import com.github.cleanArchitectureKotlin.domain.useCase.base.Response
 import com.github.cleanArchitectureKotlin.domain.useCase.login.LoginRequest
 import com.github.cleanArchitectureKotlin.domain.useCase.recoverPassword.RecoverPasswordRequest
-import com.github.cleanArchitectureKotlin.domain.useCase.signIn.SignInRequest
+import com.github.cleanArchitectureKotlin.domain.useCase.signUp.SignUpRequest
 
 class NetworkDataSource(var networkClientManager: NetworkClientManager) {
 
@@ -32,8 +32,8 @@ class NetworkDataSource(var networkClientManager: NetworkClientManager) {
     }
 
     @Throws(NetworkConnectionException::class, NetworkServiceException::class, UserAlreadyExistsException::class)
-    fun signIn(request: SignInRequest): Response<User> {
-        val networkResponse = NetworkSignInRequest(request, networkClientManager).run()
+    fun signUp(request: SignUpRequest): Response<User> {
+        val networkResponse = NetworkSignUpRequest(request, networkClientManager).run()
 
         if (!networkResponse.isSuccessful) {
             if (networkResponse.error?.error

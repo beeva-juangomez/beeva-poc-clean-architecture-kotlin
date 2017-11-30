@@ -1,14 +1,14 @@
 package com.github.cleanArchitectureKotlin.domain.useCase.login
 
+import com.github.cleanArchitectureKotlin.app.ui.base.mainThread.MainThread
 import com.github.cleanArchitectureKotlin.data.exception.IncorrectAuthenticationCredentialsException
 import com.github.cleanArchitectureKotlin.data.exception.MapperException
 import com.github.cleanArchitectureKotlin.data.exception.NetworkConnectionException
 import com.github.cleanArchitectureKotlin.data.exception.NetworkServiceException
+import com.github.cleanArchitectureKotlin.data.repository.UserRepository
 import com.github.cleanArchitectureKotlin.domain.model.User
 import com.github.cleanArchitectureKotlin.domain.useCase.base.BaseUseCase
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.MainThread
 import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
-import com.github.cleanArchitectureKotlin.data.repository.UserRepository
 import java.security.NoSuchAlgorithmException
 
 

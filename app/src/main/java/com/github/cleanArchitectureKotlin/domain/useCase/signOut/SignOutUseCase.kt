@@ -1,9 +1,9 @@
 package com.github.cleanArchitectureKotlin.domain.useCase.signOut
 
-import com.github.cleanArchitectureKotlin.domain.useCase.base.BaseUseCase
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.MainThread
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
+import com.github.cleanArchitectureKotlin.app.ui.base.mainThread.MainThread
 import com.github.cleanArchitectureKotlin.data.repository.UserRepository
+import com.github.cleanArchitectureKotlin.domain.useCase.base.BaseUseCase
+import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
 
 
 class SignOutUseCase(private val userRepository: UserRepository,

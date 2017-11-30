@@ -1,12 +1,12 @@
 package com.github.cleanArchitectureKotlin.domain.useCase.recoverPassword
 
+import com.github.cleanArchitectureKotlin.app.ui.base.mainThread.MainThread
 import com.github.cleanArchitectureKotlin.data.exception.NetworkConnectionException
 import com.github.cleanArchitectureKotlin.data.exception.NetworkServiceException
 import com.github.cleanArchitectureKotlin.data.exception.UserNotFoundException
-import com.github.cleanArchitectureKotlin.domain.useCase.base.BaseUseCase
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.MainThread
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
 import com.github.cleanArchitectureKotlin.data.repository.UserRepository
+import com.github.cleanArchitectureKotlin.domain.useCase.base.BaseUseCase
+import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
 
 
 class RecoverPasswordUseCase(private val userRepository: UserRepository,

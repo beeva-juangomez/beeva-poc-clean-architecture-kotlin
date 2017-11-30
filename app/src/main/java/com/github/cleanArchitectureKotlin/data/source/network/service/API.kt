@@ -16,8 +16,8 @@ interface API {
     @POST("login")
     fun login(@Body networkLoginBody: NetworkLoginBody): Call<NetworkUserAuthenticationResponse>
 
-    @POST("signin")
-    fun signIn(@Body networkSignInBody: NetworkSignInBody): Call<NetworkUserAuthenticationResponse>
+    @POST("signup")
+    fun signUp(@Body networkSignInBody: NetworkSignInBody): Call<NetworkUserAuthenticationResponse>
 
     @GET("forgot")
     fun recoverPassword(@Query("email") email: String): Call<Void>

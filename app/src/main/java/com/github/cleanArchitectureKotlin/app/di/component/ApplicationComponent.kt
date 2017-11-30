@@ -10,8 +10,8 @@ import com.github.cleanArchitectureKotlin.app.di.subcomponent.main.MainActivityC
 import com.github.cleanArchitectureKotlin.app.di.subcomponent.main.MainActivityModule
 import com.github.cleanArchitectureKotlin.app.di.subcomponent.recoverPassword.RecoverPasswordActivityComponent
 import com.github.cleanArchitectureKotlin.app.di.subcomponent.recoverPassword.RecoverPasswordActivityModule
-import com.github.cleanArchitectureKotlin.app.di.subcomponent.signIn.SignInActivityComponent
-import com.github.cleanArchitectureKotlin.app.di.subcomponent.signIn.SignInActivityModule
+import com.github.cleanArchitectureKotlin.app.di.subcomponent.signUp.SignUpActivityComponent
+import com.github.cleanArchitectureKotlin.app.di.subcomponent.signUp.SignUpActivityModule
 import com.github.cleanArchitectureKotlin.app.di.subcomponent.splash.SplashActivityComponent
 import com.github.cleanArchitectureKotlin.app.di.subcomponent.splash.SplashActivityModule
 import dagger.Component
@@ -27,7 +27,7 @@ import javax.inject.Singleton
 interface ApplicationComponent {
     fun plus(module: SplashActivityModule): SplashActivityComponent
     fun plus(module: LoginActivityModule): LoginActivityComponent
-    fun plus(module: SignInActivityModule): SignInActivityComponent
+    fun plus(module: SignUpActivityModule): SignUpActivityComponent
     fun plus(module: RecoverPasswordActivityModule): RecoverPasswordActivityComponent
     fun plus(module: MainActivityModule): MainActivityComponent
 }

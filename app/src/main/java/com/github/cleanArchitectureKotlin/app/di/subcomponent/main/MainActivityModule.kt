@@ -3,10 +3,10 @@ package com.github.cleanArchitectureKotlin.app.di.subcomponent.main
 import com.github.cleanArchitectureKotlin.app.di.module.ActivityModule
 import com.github.cleanArchitectureKotlin.app.di.scope.ActivityScope
 import com.github.cleanArchitectureKotlin.app.navigator.Navigator
+import com.github.cleanArchitectureKotlin.app.ui.main.activity.MainActivity
+import com.github.cleanArchitectureKotlin.app.ui.main.activity.MainView
+import com.github.cleanArchitectureKotlin.app.ui.main.presenter.MainPresenter
 import com.github.cleanArchitectureKotlin.domain.useCase.signOut.SignOutUseCase
-import com.github.cleanArchitectureKotlin.ui.main.activity.MainActivity
-import com.github.cleanArchitectureKotlin.ui.main.activity.MainView
-import com.github.cleanArchitectureKotlin.ui.main.presenter.MainPresenter
 import dagger.Module
 import dagger.Provides
 

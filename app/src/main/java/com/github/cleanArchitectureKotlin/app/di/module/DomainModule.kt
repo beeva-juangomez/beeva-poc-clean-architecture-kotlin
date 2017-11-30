@@ -1,13 +1,13 @@
 package com.github.cleanArchitectureKotlin.app.di.module
 
-import com.github.cleanArchitectureKotlin.domain.useCase.executor.MainThread
+import com.github.cleanArchitectureKotlin.app.ui.base.mainThread.MainThread
+import com.github.cleanArchitectureKotlin.data.repository.UserRepository
 import com.github.cleanArchitectureKotlin.domain.useCase.executor.UseCaseExecutor
 import com.github.cleanArchitectureKotlin.domain.useCase.getCurrentUser.GetCurrentUserUseCase
 import com.github.cleanArchitectureKotlin.domain.useCase.login.LoginUseCase
 import com.github.cleanArchitectureKotlin.domain.useCase.recoverPassword.RecoverPasswordUseCase
-import com.github.cleanArchitectureKotlin.domain.useCase.signIn.SignInUseCase
 import com.github.cleanArchitectureKotlin.domain.useCase.signOut.SignOutUseCase
-import com.github.cleanArchitectureKotlin.data.repository.UserRepository
+import com.github.cleanArchitectureKotlin.domain.useCase.signUp.SignUpUseCase
 import dagger.Module
 import dagger.Provides
 
@@ -27,7 +27,7 @@ class DomainModule {
     @Provides
     fun provideSignInUseCase(userRepository: UserRepository, executor: UseCaseExecutor,
                              mainThread: MainThread)
-            = SignInUseCase(userRepository, executor, mainThread)
+            = SignUpUseCase(userRepository, executor, mainThread)
 
     @Provides
     fun provideRecoverPasswordUseCase(userRepository: UserRepository, executor: UseCaseExecutor,

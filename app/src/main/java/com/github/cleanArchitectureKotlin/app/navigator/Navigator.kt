@@ -1,12 +1,12 @@
 package com.github.cleanArchitectureKotlin.app.navigator
 
 import android.content.Intent
-import com.github.cleanArchitectureKotlin.ui.base.BaseActivity
-import com.github.cleanArchitectureKotlin.ui.login.activity.LoginActivity
-import com.github.cleanArchitectureKotlin.ui.main.activity.MainActivity
-import com.github.cleanArchitectureKotlin.ui.recoverPassword.activity.RecoverPasswordActivity
-import com.github.cleanArchitectureKotlin.ui.signIn.activity.SignInActivity
-import com.github.cleanArchitectureKotlin.ui.splash.activity.SplashActivity
+import com.github.cleanArchitectureKotlin.app.ui.base.BaseActivity
+import com.github.cleanArchitectureKotlin.app.ui.login.activity.LoginActivity
+import com.github.cleanArchitectureKotlin.app.ui.main.activity.MainActivity
+import com.github.cleanArchitectureKotlin.app.ui.recoverPassword.activity.RecoverPasswordActivity
+import com.github.cleanArchitectureKotlin.app.ui.signUp.activity.SignUpActivity
+import com.github.cleanArchitectureKotlin.app.ui.splash.activity.SplashActivity
 
 
 class Navigator {
@@ -41,8 +41,8 @@ class Navigator {
         toDefaultActivityCleaningStack(MainActivity::class.java)
     }
 
-    fun toSignIn() {
-        toDefaultActivity(SignInActivity::class.java)
+    fun toSignUp() {
+        toDefaultActivity(SignUpActivity::class.java)
     }
 
     fun toRecoverPassword() {

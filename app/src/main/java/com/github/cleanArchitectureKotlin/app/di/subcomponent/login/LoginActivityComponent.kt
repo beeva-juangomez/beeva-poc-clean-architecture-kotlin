@@ -1,7 +1,7 @@
 package com.github.cleanArchitectureKotlin.app.di.subcomponent.login
 
 import com.github.cleanArchitectureKotlin.app.di.scope.ActivityScope
-import com.github.cleanArchitectureKotlin.ui.login.activity.LoginActivity
+import com.github.cleanArchitectureKotlin.app.ui.login.activity.LoginActivity
 import dagger.Subcomponent
 
 
